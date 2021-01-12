@@ -16,13 +16,13 @@ cte.innerHTML = "Create by 620610802"
         for (var j = 0; j < parseInt(col); j++) {
            
             var td = document.createElement('td');
-            if( i%2==0 &&j%2==1){
+            if( i%2==0 &&j%2==0){
                 td.appendChild(document.createTextNode('*'))
-            }else if( i%2==0 &&j%2==0){
+            }else if( i%2==0 &&j%2==1){
                 td.appendChild(document.createTextNode(count.toString()))
-            }else if( i%2==1 &&j%2==0){
+            }else if( i%2==1 &&j%2==1){
                 td.appendChild(document.createTextNode('*'))
-            }else if(i%2==1 &&j%2==1){
+            }else if(i%2==1 &&j%2==0){
                 td.appendChild(document.createTextNode(count.toString()))
             }
             
