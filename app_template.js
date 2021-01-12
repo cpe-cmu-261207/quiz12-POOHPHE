@@ -6,6 +6,7 @@ function createTable(){
     const col = document.getElementById('input-col').value
     const cte = document.getElementById('create')
 cte.innerHTML = "Create by Pherawat Wongsawad 620610802"
+
     console.log(parseInt(row))
     table.innerHTML = ""
     let count=1,stat=0;
