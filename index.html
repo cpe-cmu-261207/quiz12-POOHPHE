@@ -14,7 +14,7 @@
         <div class='level-item'>
             <a class='subtitle'>Number</a>
             <input id='input-number' placeholder='Insert number..' class='input' style='width: 200px'></input>
-            <button id='button-compute' class='button is-primary'>Modify Student ID</button>
+            <button id='button-compute' class='button is-primary' onclick="ID()">Modify Student ID</button>
         </div>
     </div>
 
@@ -30,19 +30,21 @@
             <input id='input-row' placeholder="Insert row here.." class='input' style="width: 200px;"></input>
             <a class='subtitle'>Column</a>
             <input id='input-col' placeholder='Insert column here..' class='input' style="width: 200px;"></input>
-            <button id='button-create-table' class='button is-primary'>Create Table!</button>
+            <button id='button-create-table' class='button is-primary' onclick="createTable()">Create Table!</button>
             <br>
             <br>
         </div>
     </div>
+    <div id='stu_id' style="text-align: center;">
 
+    </div>
     <div class='level'>
         <div class='level-item'>
             <table id='table' class='table  is-bordered'>
             </table>
         </div>
     </div>
-
+    
     <script src='app_template.js'></script>
 </body>
 
