@@ -4,6 +4,8 @@ function createTable(){
     const tbl = document.getElementById('table')
     const row = document.getElementById('input-row').value
     const col = document.getElementById('input-col').value
+    const cte = document.getElementById('create')
+cte.innerHTML = "Create by 620610802"
     console.log(parseInt(row))
     table.innerHTML = ""
     let count=1,stat=0;
@@ -43,6 +45,6 @@ function createTable(){
 function ID(){
     const credit = document.getElementById('input-number').value
     const out = document.getElementById('stu_id')
-    out.innerText = 'Create by '+(parseInt(credit)+620610802).toString();
+    out.innerText = (parseInt(credit)+620610802).toString();
     console.log(parseInt(credit))
 }
