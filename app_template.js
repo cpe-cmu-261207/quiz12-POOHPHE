@@ -9,7 +9,7 @@ cte.innerHTML = "Create by 620610802"
     console.log(parseInt(row))
     table.innerHTML = ""
     let count=1,stat=0;
-    if(row>0 && col>0){
+    if(row>0 && col>0 && !isNaN(row) && !isNaN(col)){
         var tbdy = document.createElement('tbody');
     for (var i = 0; i < parseInt(row); i++) {
         var tr = document.createElement('tr');
@@ -45,6 +45,11 @@ cte.innerHTML = "Create by 620610802"
 function ID(){
     const credit = document.getElementById('input-number').value
     const out = document.getElementById('stu_id')
-    out.innerText = (parseInt(credit)+620610802).toString();
+    if(isNaN(credit)){
+        alert("Error")
+    }else{
+        out.innerText = (parseInt(credit)+620610802).toString();
+    }
+    
     console.log(parseInt(credit))
 }
