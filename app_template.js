@@ -5,10 +5,11 @@ function createTable(){
     const row = document.getElementById('input-row').value
     const col = document.getElementById('input-col').value
     const cte = document.getElementById('create')
-cte.innerHTML = "Create by 620610802"
+cte.innerHTML = "Create by Pherawat Wongsawad 620610802"
     console.log(parseInt(row))
     table.innerHTML = ""
     let count=1,stat=0;
+    var th = document.createElement('thead');
     if(row>0 && col>0 && !isNaN(row) && !isNaN(col)){
         var tbdy = document.createElement('tbody');
     for (var i = 0; i < parseInt(row); i++) {
